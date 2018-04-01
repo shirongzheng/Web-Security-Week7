@@ -12,7 +12,7 @@ Time spent: **12** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.4
   - [x] GIF Walkthrough: 
-    - <img src='XSS1.gif' title='User Enumeration' width='' alt='' />
+    - <img src='XSS.gif' title='User Enumeration' width='' alt='' />
   - [x] Steps to recreate: 
     - Create a new post, and then put this code ```<a onmouseover= "alert('I got you!')" >click here</a>``` in the content link. Finally click link to show message in the preview of post.
   - [x] Affected source code:
