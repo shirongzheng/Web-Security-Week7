@@ -14,7 +14,7 @@ Time spent: **12** hours spent in total
   - [x] GIF Walkthrough: 
     - <img src='XSS1.gif' title='User Enumeration' width='' alt='' />
   - [x] Steps to recreate: 
-    - Create a new post, and then put this code ```<a href= "[caption code=">]</a><a title= "onmouseover=alert('Hello')" >link</a>``` in the content link. Finally click link to show Hello in the preview of post.
+    - Create a new post, and then put this code ```<a onmouseover= "alert('I got you!')" >click here</a>``` in the content link. Finally click link to show message in the preview of post.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-editor.php?rev=33361)
 
