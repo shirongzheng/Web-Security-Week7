@@ -10,9 +10,9 @@ Time spent: **12** hours spent in total
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
-    - Fixed in version: 4.2.4
+    - Fixed in version: 4.2.3
   - [x] GIF Walkthrough: 
-    - <img src='XSS.gif' title='User Enumeration' width='' alt='' />
+    - <img src='XSS.gif' title='XSS' width='' alt='' />
   - [x] Steps to recreate: 
     - Create a new post, and then put this code ```<a onmouseover= "alert('I got you!')" >click here</a>``` in the content link. Finally click link to show message in the preview of post.
   - [x] Affected source code:
@@ -22,7 +22,7 @@ Time spent: **12** hours spent in total
   - [x] Summary: 
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
-    - Fixed in version: 4.2.4
+    - Fixed in version: N/A
   - [x] GIF Walkthrough: 
     - <img src='UserEnumeration.gif' title='User Enumeration' width='' alt='' />
   - [x] Steps to recreate: 
@@ -41,6 +41,19 @@ Time spent: **12** hours spent in total
     - View a new post, and insert code ```<abbr title='Web......cedric' onmouseover='alert(1)' style='position:fixed;top:0;left:0;width:100%;height:100%'>``` on the comment uder this post. Then it shows 1 when you view the comment of this post in future. 
   - [x] Affected source code:
     - [Link 3](https://cedricvb.be/post/wordpress-stored-xss-vulnerability-4-1-2/)
+
+4. (Optional) Vulnerability Name or ID: Oversized file upload error Cross-Site Scripting (XSS3)
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
+  - [x] GIF Walkthrough: 
+    - <img src='XSS3.gif' title='XSS3' width='' alt='' />
+  - [x] Steps to recreate: 
+    - Creat new video format post and insert code ```[embed src='https://youtube.com/embed/123\x3csvg onload=alert(123)\x3e'][/embed]``` 
+      Then it shows 123 when you view it each time.
+  - [x] Affected source code:
+    - [Link 4](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 
 
 
