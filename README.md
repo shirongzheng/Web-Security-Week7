@@ -42,7 +42,7 @@ Time spent: **12** hours spent in total
   - [x] Affected source code:
     - [Link 3](https://cedricvb.be/post/wordpress-stored-xss-vulnerability-4-1-2/)
 
-4. (Optional) Vulnerability Name or ID: Oversized file upload error Cross-Site Scripting (XSS3)
+4. (Optional) Vulnerability Name or ID: Oversized File Upload Error Cross-Site Scripting (XSS3)
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
